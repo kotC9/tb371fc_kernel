@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM debian:bullseye
 
 ARG USERNAME=dev
 ARG USER_UID=1000
@@ -31,7 +31,12 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt -y install \
     libssl-dev \
     dwarves \
     bison \
-    python-is-python3
+    python2 \
+    python3 \
+    python-is-python2 \
+    adb \
+    fastboot \
+    clang-9
 
 RUN apt clean && \
     echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \

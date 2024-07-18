@@ -4,7 +4,7 @@ set -o pipefail
 PROJECT=tb371fc
 CONFIG=vendor/${PROJECT}_defconfig
 GCC_PATH=${PWD}/prebuilts/aarch64-linux-android-4.9/bin
-CC=${PWD}/prebuilts/clang-r353983c/bin/clang
+CC=clang-9
 export PATH=$GCC_PATH:$PATH
 
 

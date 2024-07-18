@@ -8,7 +8,7 @@ mkdir -p ./build/boot
 KERNEL_PATH=./build/kernel/arch/arm64/boot
 EXTRACTED_PATH=$(dirname "$0")/boot
 
-mkbootimg \
+./prebuilts/mkbootimg \
 --base "$(cat ${EXTRACTED_PATH}/boot_original.img-base)" \
 --cmdline "$(cat ${EXTRACTED_PATH}/boot_original.img-cmdline)" \
 --dtb ${EXTRACTED_PATH}/boot_original.img-dtb \

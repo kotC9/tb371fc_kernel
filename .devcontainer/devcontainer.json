@@ -21,5 +21,8 @@
             ]
         }
     },
+    "mounts": [
+        "source=/dev,target=/dev,type=bind",
+    ],
     "remoteUser": "dev",
 }

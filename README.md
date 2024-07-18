@@ -12,18 +12,18 @@ git clone --recurse-submodules https://github.com/kotC9/tb371fc_kernel.git
 
 ## Сборка
 
-на linux машине(например debian 12) установить нужные пакеты для сборки:
+на linux машине(протестировано на debian 11) установить нужные пакеты для сборки:
 
 ```bash
-# apt install build-essential bc \
+sudo apt install build-essential bc \
     kmod cpio \
     flex libncurses5-dev \
     libelf-dev libssl-dev dwarves \
-    bison python-is-python3 python3
+    bison python-is-python2 python3 python2 \
+    adb fastboot clang-9
 ```
 
 либо воспользоваться devcontainer, необходим докер
-
 
 Сборка: 
 
