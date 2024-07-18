@@ -1,0 +1,3 @@
+[submodule "prebuilts"]
+	path = prebuilts
+	url = git@github.com:kotC9/tb371fc_buildtools.git
