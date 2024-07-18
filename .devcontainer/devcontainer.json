@@ -1,0 +1,25 @@
+{
+    "name": "kernel-dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "clangd.path": "/usr/bin/clangd",
+                "terminal.integrated.shell.*": "/bin/bash"
+            },
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.makefile-tools",
+                "cschlosser.doxdocgen",
+                "aaron-bond.better-comments",
+                "donjayamanne.githistory"
+            ]
+        }
+    },
+    "remoteUser": "dev",
+}
